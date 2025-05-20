@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const projectsContainer = document.getElementById("projectsContainer");
-  const projects = ["Project1", "Project2", "Project3"];
+  const projects = ["Project1", "Project2", "Project3", "Project4", "Project5"];
 
   for (let project of projects) {
     try {

@@ -9,6 +9,22 @@ body {
   font-family: 'Jura', sans-serif;
 }
 
+/* Заголовок Projects */
+.header {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+/* Серая полоса под заголовком */
+.header-bar {
+  height: 4px; /* Толщина линии */
+  background: #ccc;
+  width: 100%;
+}
+
+/* Основное содержимое */
 .content {
   flex: 1;
   text-align: center;
@@ -18,20 +34,13 @@ body {
   align-items: center;
 }
 
-/* Заголовок Projects */
-.title {
-  font-size: 48px;
-  font-weight: 600;
-  margin-bottom: 50px; /* Отступ перед серой линией */
-}
-
 /* Футер */
 footer {
   text-align: center;
   padding: 20px;
 }
 
-/* Горизонтальная линия */
+/* Горизонтальная линия внизу */
 hr {
   border: none;
   height: 1px;

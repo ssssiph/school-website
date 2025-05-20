@@ -6,11 +6,23 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: 'Jura', sans-serif;
 }
 
 .content {
   flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Заголовок Projects */
+.title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 50px; /* Отступ перед серой линией */
 }
 
 /* Футер */
@@ -43,7 +55,7 @@ hr {
 .telegram-button img {
   max-width: 70%;
   max-height: 70%;
-  border-radius: 10px; /* Вернули закругленные края */
+  border-radius: 10px;
   filter: grayscale(100%);
   transition: filter 0.3s;
 }
@@ -51,8 +63,4 @@ hr {
 /* Цвет восстанавливается при наведении */
 .telegram-button:hover img {
   filter: grayscale(0%);
-}
-
-link[rel="icon"] {
-  border-radius: 10px;
 }

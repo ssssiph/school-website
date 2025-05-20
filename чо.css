@@ -9,7 +9,6 @@ body {
   font-family: 'Jura', sans-serif;
 }
 
-/* Заголовок Projects */
 .header {
   text-align: center;
   font-size: 48px;
@@ -17,14 +16,14 @@ body {
   padding: 20px 0;
 }
 
-/* Серая полоса под заголовком */
-.header-bar {
-  height: 4px; /* Толщина линии */
+.header-bar,
+hr {
+  border: none;
+  height: 1px;
   background: #ccc;
-  width: 100%;
+  margin: 0;
 }
 
-/* Основное содержимое */
 .content {
   flex: 1;
   text-align: center;
@@ -34,21 +33,11 @@ body {
   align-items: center;
 }
 
-/* Футер */
 footer {
   text-align: center;
   padding: 20px;
 }
 
-/* Горизонтальная линия внизу */
-hr {
-  border: none;
-  height: 1px;
-  background: #ccc;
-  margin: 0 0 20px 0;
-}
-
-/* Кнопка Telegram */
 .telegram-button {
   display: inline-flex;
   align-items: center;
@@ -60,7 +49,6 @@ hr {
   text-decoration: none;
 }
 
-/* Серая иконка изначально */
 .telegram-button img {
   max-width: 70%;
   max-height: 70%;
@@ -69,7 +57,6 @@ hr {
   transition: filter 0.3s;
 }
 
-/* Цвет восстанавливается при наведении */
 .telegram-button:hover img {
   filter: grayscale(0%);
 }

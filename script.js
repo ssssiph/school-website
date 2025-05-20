@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const projectsContainer = document.getElementById("projectsContainer");
-  const projects = ["Project1", "Project2", "Project3"]; // Список папок проектов
+  const projects = ["Project1", "Project2", "Project3"];
 
   for (let project of projects) {
     try {

@@ -1,3 +1,28 @@
+.telegram-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  background: none;
+}
+
+.telegram-button img {
+  max-width: 70%;
+  max-height: 70%;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.telegram-button:hover img {
+  filter: grayscale(0%);
+}
+
+/* Контейнер с проектами */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -6,10 +31,12 @@
   justify-content: center;
 }
 
+/* Фрейм проекта */
 .project-frame {
   border-radius: 12px;
   border: 2px solid #ccc;
   padding: 20px;
+  width: 400px; /* Теперь фиксированный размер */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,6 +47,7 @@
   background-color: rgba(128, 0, 128, 0.2);
 }
 
+/* Визуализация проекта */
 .project-preview {
   width: 100%;
   height: 200px;
@@ -29,20 +57,7 @@
   margin-bottom: 10px;
 }
 
-.project-info {
-  text-align: center;
-}
-
-.date {
-  font-size: 14px;
-  color: #888;
-}
-
-.description {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
+/* Кнопка загрузки проекта */
 .load-button {
   display: inline-block;
   width: 50px;
@@ -51,7 +66,7 @@
   line-height: 50px;
   font-size: 24px;
   font-weight: bold;
-  background-color: purple;
+  background-color: #a070ff; /* Нежный фиолетовый цвет */
   color: white;
   border-radius: 10px;
   text-decoration: none;

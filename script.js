@@ -14,10 +14,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         <div class="project-preview" style="background-image: url('Projects/${project}/preview.png');"></div>
         <div class="project-info">
           <p class="title">${data.name}</p>
-          <p class="description">${data.description}</p>
+          <p class="date">${data.date}</p>
         </div>
-        <p class="date">${data.date}</p>
-        <a href="${data.link}" class="load-button">→</a>
+        <div class="project-bottom">
+          <p class="description">${data.description}</p>
+          <a href="${data.link}" class="load-button">→</a>
+        </div>
       `;
 
       projectsContainer.appendChild(projectFrame);

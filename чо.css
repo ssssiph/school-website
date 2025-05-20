@@ -1,47 +1,19 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: 'Jura', sans-serif;
-}
-
-/* Заголовок Projects */
-.header {
-  text-align: center;
-  font-size: 48px;
-  font-weight: 600;
-  padding: 20px 0;
-}
-
-/* Серая линия под заголовком */
-.header-bar {
-  border: none;
-  height: 1px;
-  background: #ccc;
-  width: 100%;
-}
-
-/* Контейнер с проектами */
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Более компактный размер */
   gap: 20px;
   padding: 40px;
   justify-content: center;
 }
 
-/* Фрейм проекта */
 .project-frame {
   border-radius: 12px;
   border: 2px solid #ccc;
   padding: 20px;
-  width: 400px;
+  width: 300px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column; /* Вернул вертикальное расположение */
+  align-items: center;
   transition: background-color 0.3s;
 }
 
@@ -49,20 +21,18 @@ body {
   background-color: rgba(128, 0, 128, 0.2);
 }
 
-/* Визуализация проекта */
 .project-preview {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 200px;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  margin-right: 15px;
+  margin-bottom: 10px;
 }
 
-/* Информация о проекте слева */
 .project-info {
-  flex: 1;
   text-align: left;
+  width: 100%;
   color: #666;
 }
 
@@ -75,9 +45,9 @@ body {
   font-size: 14px;
   color: #888;
   text-align: right;
+  margin-bottom: 5px;
 }
 
-/* Кнопка загрузки проекта */
 .load-button {
   display: inline-block;
   width: 50px;
@@ -95,45 +65,4 @@ body {
 
 .load-button:hover {
   background-color: #8a2be2;
-}
-
-/* Футер всегда внизу */
-footer {
-  text-align: center;
-  padding: 20px;
-  margin-top: auto;
-}
-
-/* Горизонтальная линия */
-hr {
-  border: none;
-  height: 1px;
-  background: #ccc;
-  margin: 0;
-}
-
-/* Кнопка Telegram по центру */
-.telegram-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  background: none;
-  margin: auto;
-}
-
-.telegram-button img {
-  max-width: 70%;
-  max-height: 70%;
-  border-radius: 10px;
-  filter: grayscale(100%);
-  transition: filter 0.3s;
-}
-
-.telegram-button:hover img {
-  filter: grayscale(0%);
 }

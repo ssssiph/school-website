@@ -11,7 +11,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       let projectFrame = document.createElement("div");
       projectFrame.className = "project-frame";
       projectFrame.innerHTML = `
-        <div class="project-preview" style="background-image: url('Projects/${project}/preview.png');"></div>
+        <div class="project-preview">
+          <iframe src="https://test-site-production-f90b.up.railway.app/Projects/${project}/index.html" 
+            width="100%" height="200" frameborder="0">
+          </iframe>
+        </div>
         <div class="project-info">
           <p class="title">${data.name}</p>
           <p class="date">${data.date}</p>

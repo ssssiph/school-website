@@ -34,7 +34,6 @@ hr {
   justify-content: center;
   width: 60px;
   height: 60px;
-  background: none; /* Убираем серый фон */
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -44,6 +43,7 @@ hr {
 .telegram-button img {
   max-width: 70%;
   max-height: 70%;
+  border-radius: 10px; /* Вернули закругленные края */
   filter: grayscale(100%);
   transition: filter 0.3s;
 }

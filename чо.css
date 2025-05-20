@@ -1,53 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Jura', sans-serif;
+  align-items: center;
+}
+
+/* Заголовок Projects строго по центру */
+.header {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  padding: 20px 0;
+  width: 100%;
+}
+
+/* Полоска под заголовком */
+.header-bar {
+  border: none;
+  height: 1px;
+  background: #ccc;
+  width: 100%;
+}
+
+/* Контейнер с проектами */
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Более компактный размер */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 40px;
   justify-content: center;
 }
 
+/* Фрейм проекта */
 .project-frame {
   border-radius: 12px;
   border: 2px solid #ccc;
   padding: 20px;
-  width: 300px;
+  width: 320px;
   display: flex;
-  flex-direction: column; /* Вернул вертикальное расположение */
+  flex-direction: column;
   align-items: center;
   transition: background-color 0.3s;
 }
 
-.project-frame:hover {
-  background-color: rgba(128, 0, 128, 0.2);
-}
-
+/* Визуализация проекта (сверху) */
 .project-preview {
   width: 100%;
-  height: 200px;
+  height: 180px;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
+/* Информация о проекте */
 .project-info {
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   color: #666;
 }
 
+/* Название слева */
 .project-info .title {
   font-size: 20px;
   font-weight: bold;
 }
 
+/* Дата справа */
 .date {
   font-size: 14px;
   color: #888;
-  text-align: right;
-  margin-bottom: 5px;
 }
 
+/* Описание слева, кнопка справа */
+.project-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+/* Кнопка загрузки проекта */
 .load-button {
   display: inline-block;
   width: 50px;
@@ -65,4 +103,46 @@
 
 .load-button:hover {
   background-color: #8a2be2;
+}
+
+/* Футер всегда внизу */
+footer {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Горизонтальная линия */
+hr {
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin: 0;
+}
+
+/* Кнопка Telegram по центру */
+.telegram-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  background: none;
+  margin: auto;
+}
+
+.telegram-button img {
+  max-width: 70%;
+  max-height: 70%;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.telegram-button:hover img {
+  filter: grayscale(0%);
 }

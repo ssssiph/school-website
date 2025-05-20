@@ -1,3 +1,4 @@
+/* Общие стили */
 body {
   margin: 0;
   padding: 0;
@@ -12,11 +13,13 @@ body {
   flex: 1;
 }
 
+/* Футер */
 footer {
   text-align: center;
   padding: 20px;
 }
 
+/* Горизонтальная линия */
 hr {
   border: none;
   height: 1px;
@@ -24,26 +27,28 @@ hr {
   margin: 0 0 20px 0;
 }
 
+/* Кнопка Telegram */
 .telegram-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 60px;
   height: 60px;
-  background-color: #c0c0c0;
+  background: none; /* Убираем серый фон */
   border: none;
-  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
   text-decoration: none;
 }
 
+/* Серая иконка изначально */
 .telegram-button img {
   max-width: 70%;
   max-height: 70%;
-  border-radius: inherit;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
 }
 
-.telegram-button:hover {
-  background-color: #0088cc;
+/* Цвет восстанавливается при наведении */
+.telegram-button:hover img {
+  filter: grayscale(0%);
 }

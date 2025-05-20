@@ -52,3 +52,7 @@ hr {
 .telegram-button:hover img {
   filter: grayscale(0%);
 }
+
+link[rel="icon"] {
+  border-radius: 10px;
+}

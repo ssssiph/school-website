@@ -13,9 +13,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       projectFrame.innerHTML = `
         <div class="project-preview" style="background-image: url('Projects/${project}/preview.png');"></div>
         <div class="project-info">
-          <p class="date">${data.date}</p>
+          <p class="title">${data.name}</p>
           <p class="description">${data.description}</p>
         </div>
+        <p class="date">${data.date}</p>
         <a href="${data.link}" class="load-button">→</a>
       `;
 

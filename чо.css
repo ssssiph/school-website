@@ -29,10 +29,22 @@ body {
 /* Контейнер с проектами */
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* Ограничение до 3 фреймов */
   gap: 20px;
   padding: 40px;
   justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 фрейма в ряд на средних экранах */
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 фрейм в ряд на маленьких экранах */
+  }
 }
 
 /* Фрейм проекта */
